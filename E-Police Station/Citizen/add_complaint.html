@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen - Add Complaint</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="/allstyle.css">
+</head>
+
+<body>
+    <header>
+        <h1>Add Complaint</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="add_fir.html">Add FIR</a></li>
+                <li><a href="add_complaint.html">Add Complaint</a></li>
+                <li><a href="view_fir_status.html">View FIR Status</a></li>
+                <li><a href="view_complaint_status.html">View Complaint Status</a></li>
+                <li><a href="search_police_station.html">Search Police Station</a></li>
+                <li><a href="upload_photo_video.html">Upload Photo & Video</a></li>
+            </ul>
+        </nav>
+        <main>
+            <!-- Form to Add New Complaint -->
+            <form action="#" method="post">
+                <h2>File a New Complaint</h2>
+                <div class="form-group">
+                    <label for="complaint-id">Complaint ID</label>
+                    <input type="text" id="complaint-id" name="complaint-id" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="citizen-name">Your Name</label>
+                    <input type="text" id="citizen-name" name="citizen-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="incident-date">Incident Date</label>
+                    <input type="date" id="incident-date" name="incident-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="incident-type">Incident Type</label>
+                    <select id="incident-type" name="incident-type" required>
+                        <option value="">Select Incident Type</option>
+                        <option value="theft">Theft</option>
+                        <option value="assault">Assault</option>
+                        <option value="fraud">Fraud</option>
+                        <option value="property">Property Dispute</option>
+                        <option value="domestic-violence">Domestic Violence</option>
+                        <!-- Add more incident types as needed -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Complaint Description</label>
+                    <textarea id="description" name="description" placeholder="Describe the complaint in detail" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Incident Location</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="evidence">Upload Evidence (Photo/Video)</label>
+                    <input type="file" id="evidence" name="evidence" accept="image/*,video/*">
+                </div>
+
+                <button type="submit" class="btn">Submit Complaint</button>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>

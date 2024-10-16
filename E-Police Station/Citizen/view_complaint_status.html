@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen - View Complaint Status</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="/allstyle.css">
+</head>
+
+<body>
+    <header>
+        <h1>View Complaint Status</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="add_fir.html">Add FIR</a></li>
+                <li><a href="add_complaint.html">Add Complaint</a></li>
+                <li><a href="view_fir_status.html">View FIR Status</a></li>
+                <li><a href="view_complaint_status.html">View Complaint Status</a></li>
+                <li><a href="search_police_station.html">Search Police Station</a></li>
+                <li><a href="upload_photo_video.html">Upload Photo & Video</a></li>
+            </ul>
+        </nav>
+        <main>
+            <!-- Form to Search Complaint Status -->
+            <form action="#" method="post">
+                <h2>Check Complaint Status</h2>
+                <div class="form-group">
+                    <label for="complaint-id">Complaint ID</label>
+                    <input type="text" id="complaint-id" name="complaint-id" placeholder="Enter Complaint ID" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="citizen-name">Your Name</label>
+                    <input type="text" id="citizen-name" name="citizen-name" placeholder="Enter Your Name" required>
+                </div>
+
+                <button type="submit" class="btn">Check Status</button>
+            </form>
+
+            <!-- Status Display Section -->
+            <section id="complaint-status">
+                <h2>Complaint Status</h2>
+                <p>Complaint ID: 98765</p>
+                <p>Status: Resolved</p>
+                <p>Date Filed: 15/09/2024</p>
+                <p>Description: Complaint regarding noise pollution in residential area.</p>
+                <!-- Add more status details as needed -->
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

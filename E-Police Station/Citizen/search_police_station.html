@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen - Search Police Station</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="/allstyle.css">
+</head>
+
+<body>
+    <header>
+        <h1>Search Police Station</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="add_fir.html">Add FIR</a></li>
+                <li><a href="add_complaint.html">Add Complaint</a></li>
+                <li><a href="view_fir_status.html">View FIR Status</a></li>
+                <li><a href="view_complaint_status.html">View Complaint Status</a></li>
+                <li><a href="search_police_station.html">Search Police Station</a></li>
+                <li><a href="upload_photo_video.html">Upload Photo & Video</a></li>
+            </ul>
+        </nav>
+        <main>
+            <!-- Form to Search Police Station -->
+            <form action="#" method="post">
+                <h2>Find Your Nearest Police Station</h2>
+                <div class="form-group">
+                    <label for="city-name">City Name</label>
+                    <input type="text" id="city-name" name="city-name" placeholder="Enter Your City Name" required>
+                </div>
+
+                <button type="submit" class="btn">Search</button>
+            </form>
+
+            <!-- Police Station Results Section -->
+            <section id="police-station-results">
+                <h2>Police Station Results</h2>
+                <p>Branch ID: 003</p>
+                <p>Branch Name: Eastside Police Station</p>
+                <p>City: New York</p>
+                <p>Contact: +1 555 1234 567</p>
+                <p>Address: 123 Eastside Street, New York</p>
+                <!-- Add more police station results as needed -->
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

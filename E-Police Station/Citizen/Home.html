@@ -5,6 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Citizen Dashboard</title>
     <link rel="stylesheet" href="Homestyle.css">
+    <style>
+        /* Basic layout styles for Citizen Dashboard */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1500px;
+            margin: 5px auto;
+            background-color: rgb(74, 68, 68);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            height: 500px;
+        }
+
+        nav {
+            flex: 1;
+            background-color: #100404;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #f7f3f3;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: white;
+        }
+
+        main {
+            flex: 3;
+            padding: 20px;
+        }
+
+        main h2 {
+            color: #333;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,17 +76,17 @@
     <div class="container">
         <nav>
             <ul>
-                <li><a href="#">Add FIR</a></li>
-                <li><a href="#">Add Complaint</a></li>
-                <li><a href="#">View FIR Status</a></li>
-                <li><a href="#">View Complaint Status</a></li>
-                <li><a href="#">Search Police Station</a></li>
-                <li><a href="#">Upload Photo & Video</a></li>
+                <li><a href="add_fir.html">Add FIR</a></li>
+                <li><a href="add_complaint.html">Add Complaint</a></li>
+                <li><a href="view_fir_status.html">View FIR Status</a></li>
+                <li><a href="view_complaint_status.html">View Complaint Status</a></li>
+                <li><a href="search_police_station.html">Search Police Station</a></li>
+                <li><a href="upload_photo_video.html">Upload Photo & Video</a></li>
             </ul>
         </nav>
         <main>
             <h2>Welcome, Citizen</h2>
-            <p>Use the options on the left to file FIRs or complaints.</p>
+            <p style="font-size: 18px;">Use the options on the left to file FIRs or complaints, view their status, or upload related files.</p>
         </main>
     </div>
 </body>

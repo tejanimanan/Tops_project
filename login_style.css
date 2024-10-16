@@ -6,24 +6,33 @@
 
 body {
     background: url('https://example.com/admin-bg.jpg') no-repeat center center/cover;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIRzn5GcdpDWGC6xB3FWMIFy5bGtffnWl8kg&s);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .login-container {
-    background-color: rgba(255, 255, 255, 0.1);
+    width: 400px;
+    height: 400px;
+    background-color: rgba(230, 226, 226, 0.5);
     padding: 50px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-top: 400px;
 }
 
 .login-box {
-    background: rgba(255, 255, 255, 0.9);
+    height: 300px;
+    width: 300px;
+    background: rgba(222, 209, 209,1);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+   
 }
 
 h2 {
@@ -50,6 +59,7 @@ input {
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
+    font-size: 18px;
 }
 
 .btn:hover {
