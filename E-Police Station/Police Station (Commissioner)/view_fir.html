@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Police Station - View FIRs</title>
+    <link rel="stylesheet" href="home_style.css">
+    <link rel="stylesheet" href="/allstyle.css">
+</head>
+<body>
+    <header>
+        <h1>View FIRs</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Manage_police_sta.html">Manage Information Of Police station Area wise</a></li>
+                <li><a href="Manage_inspector.html">Manage Inspector</a></li>
+                <li><a href="Manage_constable.html">Manage Constable</a></li>
+                <li><a href="view_fir.html">View FIR</a></li>
+                <li><a href="view_complaint.html">View Complaint</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>FIR List</h2>
+            <table cellspacing="2px">
+                <thead>
+                    <tr>
+                        <th>FIR ID</th>
+                        <th>Citizen Name</th>
+                        <th>Incident Type</th>
+                        <th>Date</th>
+                        <th>Location</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>FIR001</td>
+                        <td>John Doe</td>
+                        <td>Theft</td>
+                        <td>2024-10-10</td>
+                        <td>Downtown</td>
+                        <td>Open</td>
+                        <td>
+                            <button class="btn">View</button>
+                            <button class="btn">Update</button>
+                            <button class="btn">Close</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>FIR002</td>
+                        <td>Jane Smith</td>
+                        <td>Assault</td>
+                        <td>2024-10-12</td>
+                        <td>Uptown</td>
+                        <td>Under Investigation</td>
+                        <td>
+                            <button class="btn">View</button>
+                            <button class="btn">Update</button>
+                            <button class="btn">Close</button>
+                        </td>
+                    </tr>
+                    <!-- Add more FIRs as needed -->
+                </tbody>
+            </table>
+
+            <!-- Form to Search FIR -->
+            <form action="#" method="post">
+                <h2>Search FIR</h2>
+                <div class="form-group">
+                    <label for="search-fir-id">FIR ID</label>
+                    <input type="text" id="search-fir-id" name="search-fir-id" placeholder="Enter FIR ID to search" required>
+                </div>
+
+                <button type="submit" class="btn">Search FIR</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

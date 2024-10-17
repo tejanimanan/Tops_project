@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspector - Manage Complaints</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="/allstyle.css">
+    
+    <style>
+        table,tr,td,th{
+            border: 2px solid rgb(161, 149, 149);
+            padding: 3px 2px;
+        }
+       
+        /* Additional styles for the complaint images */
+        .complaint-img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .action-btns {
+            display: flex;
+            gap: 10px;
+        }
+
+        .action-btns button {
+            padding: 5px 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .action-btns button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Manage Complaints</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="view_fir.html">View FIR</a></li>
+                <li><a href="view_complaints.html">View Complaint</a></li>
+                <li><a href="manage_complaints.html">Manage Complaint</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Complaint List</h2>
+            <!-- Table for viewing and managing complaints -->
+            <table border="1px" cellspacing="0px">
+                <thead>
+                    <tr>
+                        <th>Complaint ID</th>
+                        <th>Citizen Name</th>
+                        <th>Complaint Type</th>
+                        <th>Description</th>
+                        <th>Image/Video</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>John Doe</td>
+                        <td>Theft</td>
+                        <td>Stolen bike near the station.</td>
+                        <td><img src="https://picsum.photos/100?1" alt="Evidence Image" class="complaint-img"></td>
+                        <td>Pending</td>
+                        <td>
+                            <div class="action-btns">
+                                <button>View</button>
+                                <button>Edit</button>
+                                <button>Resolve</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Jane Smith</td>
+                        <td>Fraud</td>
+                        <td>Scammed by an online seller.</td>
+                        <td><img src="https://picsum.photos/100?2" alt="Evidence Image" class="complaint-img"></td>
+                        <td>Under Investigation</td>
+                        <td>
+                            <div class="action-btns">
+                                <button>View</button>
+                                <button>Edit</button>
+                                <button>Resolve</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Add more complaint rows as needed -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+
+</html>

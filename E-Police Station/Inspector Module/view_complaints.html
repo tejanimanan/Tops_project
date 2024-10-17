@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspector - View Complaints</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="/allstyle.css">
+    <style>
+        table,tr,td,th{
+            border: 2px solid rgb(161, 149, 149);
+            padding: 3px 2px;
+        }
+        button{
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>View Complaints</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="view_fir.html">View FIR</a></li>
+                <li><a href="view_complaints.html">View Complaints</a></li>
+                <li><a href="manage_complaints.html">Manage Complaints</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Complaints Overview</h2>
+
+            <!-- Complaint Table -->
+            <table cellspacing="0px">
+                <thead>
+                    <tr>
+                        <th>Complaint ID</th>
+                        <th>Citizen Name</th>
+                        <th>Complaint Type</th>
+                        <th>Complaint Description</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>John Doe</td>
+                        <td>Theft</td>
+                        <td>Stolen bike from garage</td>
+                        <td>Pending</td>
+                        <td>
+                            <button class="btn">View</button>
+                            <button class="btn">Update Status</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Jane Smith</td>
+                        <td>Assault</td>
+                        <td>Physical attack reported</td>
+                        <td>In Progress</td>
+                        <td>
+                            <button class="btn">View</button>
+                            <button class="btn">Update Status</button>
+                        </td>
+                    </tr>
+                    <!-- Add more complaint records as needed -->
+                </tbody>
+            </table>
+
+           
+        </main>
+    </div>
+</body>
+
+</html>

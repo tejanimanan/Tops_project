@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIRLINES</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            .container{
+    display: flex;
+    background-color: rgb(52, 58, 58);
+    height: 100px;
+    width: 100%;
+    /* position: fixed;
+    top:0;
+    left: 0; */
+}
+.logo{
+    width: 600px;
+    text-align: center;
+    padding-top:30px ;
+}
+.nav{
+    
+    width: 100%;
+}
+.icon{
+    height: 40px;
+    text-align: right;
+}
+.home
+{
+    height: 40px;
+}
+.blue
+{
+    color: rgba(18, 164, 212, 0.61);
+}
+.hh{
+    font-size: xx-large;
+    font-style: italic;
+}
+span{
+    color: white;
+}
+.ic{
+    color: white;
+    height: 10px;
+    padding: 20px;
+    transition: 1s;
+}
+.ic:hover{
+    color: orangered;
+}
+.ul
+{
+    display: flex;
+    justify-content: right;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+    padding-left: 20px;
+}
+a:hover{
+    color: orangered;
+}
+.li{
+    padding: 5px;
+}
+.air{
+    /* margin-top: 100px; */
+    background: url(airr.jpg);
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+   background-position: 20px; 
+}
+.main{
+    display: flex;
+    height: 700px;
+    width: 100%;
+}
+.form{
+    height: 697px;
+    width: 400px;
+    background-color: antiquewhite;
+    
+}
+.welcome{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+table{
+    padding-left: 15px;
+    color:black;
+}
+input[type=button]{
+    color: white;
+    background-color: rgb(11, 109, 194);
+    border: none;
+    padding: 5px;
+    height: 30px;
+    width: 50px;
+    border-radius:5px ;
+}
+.ll::marker {
+    color: rgb(9, 83, 232);
+}
+.btn{
+    border: none;
+    margin-right: 10px;
+}
+.bb{
+    background-color: rgb(48, 44, 44);
+    color: white;
+    outline: 5px solid rgb(48, 44, 44);
+    border-radius: 1px;
+}
+.bl{
+    background-color: rgb(49, 123, 173);
+    outline: 5px solid rgb(49, 123, 173);
+    color: white;
+    border-radius: 1px;
+}
+.ourclient{
+    border: 2px soli black;
+    width: 60%;
+    padding-left: 30px;
+    
+}
+
+.side{
+    height: 180px;
+    background-color: aqua;
+    width: 30%;
+    border-radius: 5px;
+    margin-left: 54px;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 10px;
+}
+.footer{
+    background-color: rgb(55, 52, 52);
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+#pp{
+    padding-top:40px ;
+    padding-left: 10px;
+    color: white;
+}
+.ff{
+    display: inline;
+    padding-left: 900px;
+    word-spacing: 30px;
+}
+        </style>
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <div class="container">
+        <div class="logo">
+            <span class="blue hh">AIR</span><span class="hh">LINES</span>
+            <br><span>INTERNATIONAL TRAVEL</span>
+        </div>
+        <div class="nav">
+            <div class="icon">
+                <i class="fa fa-home ic" aria-hidden="true"></i>
+                <i class="fa fa-envelope-o ic" aria-hidden="true"></i>
+                <i class="fa fa-bars ic" aria-hidden="true"></i>
+            </div>
+            <div class="home">
+                <ul type="none" class="ul">
+                    <li class="li"><a href="">HOME</a></li>
+                    <li class="li"><a href="">OUR AIRCRAFT</a></li>
+                    <li class="li"><a href="">SAFTY</a></li>
+                    <li class="li"><a href="">CHARTERS</a></li>
+                    <li class="li"><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- aircraft image  -->
+    <div class="air"></div>
+    <div class="main">
+        <div class="form">
+            <table height="100%">
+                <tr>
+                    <td>
+                        <h2 style="color: rgb(102, 102, 102);">Your Flight Planner</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="rd">Round Trip
+                        <input type="radio" name="rd">Empty Trip<br>
+                        <input type="radio" name="rd">One Trip&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="rd">Multi Trip
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        Leaving From:<br><input type="text" placeholder="Enter Qty Airport Code" style="outline: none;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br>
+                        Departure Date And Time<br>
+                        <input type="date" style="outline: none;">
+                        <input type="time" style="outline: none;">
+                    </td>
+                </tr>
+                <tr>
+                    <td><br>
+                        Return Date And Time<br>
+                        <input type="date" style="outline: none;">
+                        <input type="time" style="outline: none;">
+                    </td>
+                </tr>
+                <tr>
+                    <td><br>
+                        Passenger(s):<br><input type="text" placeholder="#Passenger" style="outline: none;"
+                            style="outline: none;">&nbsp;<input type="button" value="GO!">
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="welcome">
+            <div style="padding-left:50px ;">
+                <h2 style="text-align: center;">Welcome to Our Website</h2>
+                <p style="color: rgb(31, 94, 157);text-align: justify;padding-right: 15px">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Enim veniam architecto fuga vel deleniti unde repellat fugiat velit.
+                    Officiis dolorum fuga in. Est incidunt ullam fugit velit maiores ab eligendi?Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Dolores repellendus sapiente sint accusamus debitis dicta a
+                    reiciendis dolorum nihil veniam? Est quis a ad placeat velit ex non natus iusto.</p>
+                <p style="color: rgb(31, 94, 157);text-align: justify;padding-right: 15px;">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Enim veniam architecto fuga vel deleniti unde repellat fugiat velit.
+                    Officiis dolorum fuga in. Est incidunt ullam fugit velit maiores ab eligendi?Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Dolores repellendus sapiente sint accusamus debitis dicta a
+                    reiciendis dolorum nihil veniam? Est quis a ad placeat velit ex non natus iusto.</p>
+            </div>
+            <div>
+                <ul style="text-align: end;">
+                    <li class="ll" style="text-align: left ;">Aircraft
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illum nulla est libero velit
+                            quasi! Beatae labore numquam cupiditate velit magni impedit et! Dicta ex, fuga nemo fugiat
+                            natus quidem?</p>
+                    </li>
+                    <button class="btn bb">READ MORE</button>
+                    <li class="ll" style="text-align: left ;">Charset</li>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illum nulla est libero velit
+                        quasi! Beatae labore numquam cupiditate velit magni impedit et! Dicta ex, fuga nemo fugiat natus
+                        quidem?</p>
+                    <button class="btn bl">FLEET</button>
+                    <button class="btn bb">RESERVATION</button>
+                </ul>
+
+            </div>
+           
+            <div class="ourclient">
+                <h2>OUR CLIENT</h2>
+                <p><b>AVERO EOSET</b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, accusamus non.
+                    Perspiciatis repudiandae voluptatem accusantium excepturi. Minima ex nisi sit consequuntur veniam
+                    dol
+                </p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing  elit.<u> Modi nesciunt architecto</u> Modi nesciunt architecto odit est dignisimus dicta tenetur placeat nulla, eum deleniti dolor quis?
+                </p>
+                
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing  elit.<u> Modi nesciunt architecto</u> Modi nesciunt architecto odit est dignisimus dicta tenetur placeat nulla, eum deleniti dolor quis?
+                </p>
+
+            </div>
+            <div class="side" >Lorem ipsum dolor sit amet <br>consectetur adipisicing elit  . Sint veniam <br>voluptas ex aperiam inventore eum, debitis tempora <br>maxime odit repellat rem qui itaque quo necessitatibus
+            <p style="text-align: right; padding-right: 10px;"><br><br>- OM ITALIYA</p></div>
+        </div>
+        
+    </div>
+    <div class="footer">
+          <div id="pp">&copy; 2024-25 Visitors. All rights reserved | Power by <a href="https://wa.me/918469531178?text=Hello,I%20Want%20To%20Know%20more%20about%20Your%20Service%20Can%20You%20Help%20me?%20">OM ITALIYA</a>
+            <div class="ff" >
+                <i class="fa fa-twitter cc" aria-hidden="true"></i>
+                <i class="fa fa-instagram cc" aria-hidden="true"></i>
+                <i class="fa fa-facebook cc" aria-hidden="true"></i>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

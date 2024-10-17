@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspector - View FIRs</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="/allstyle.css">
+    <style>
+        table,tr,td,th{
+            border: 2px solid rgb(161, 149, 149);
+            padding: 3px 2px;
+        }
+        button{
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>View FIRs</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="view_fir.html">View FIR</a></li>
+                <li><a href="view_complaints.html">View Complaints</a></li>
+                <li><a href="manage_complaints.html">Manage Complaints</a></li>
+            </ul>
+        </nav>
+        <main>
+            <!-- Table to Display FIRs -->
+            <h2>FIR List</h2>
+            <table border="2px" cellspacing="0px" >
+                <thead>
+                    <tr>
+                        <th>FIR ID</th>
+                        <th>Citizen Name</th>
+                        <th>Incident Date</th>
+                        <th>Incident Type</th>
+                        <th>Location</th>
+                        <th>Description</th>
+                        <th>Evidence</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>FIR001</td>
+                        <td>John Doe</td>
+                        <td>2023-10-01</td>
+                        <td>Theft</td>
+                        <td>New York</td>
+                        <td>Someone stole my wallet in the subway.</td>
+                        <td><a href="evidence_photo1.jpg">View Photo</a></td>
+                        <td>
+                            <button class="btn">View</button>
+                            <button class="btn">Mark Resolved</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>FIR002</td>
+                        <td>Jane Smith</td>
+                        <td>2023-10-05</td>
+                        <td>Accident</td>
+                        <td>Los Angeles</td>
+                        <td>Car accident on the highway, need assistance.</td>
+                        <td><a href="evidence_video1.mp4">View Video</a></td>
+                        <td>
+                            <button class="btn">View</button>
+                            <button class="btn">Mark Resolved</button>
+                        </td>
+                    </tr>
+                    <!-- More FIR rows can be added here -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+
+</html>

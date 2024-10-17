@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Police Station - Manage Inspector</title>
+    <link rel="stylesheet" href="home_style.css">
+    <link rel="stylesheet" href="/allstyle.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Inspectors</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Manage_police_sta.html">Manage Information Of Police station Area wise</a></li>
+                <li><a href="Manage_inspector.html">Manage Inspector</a></li>
+                <li><a href="Manage_constable.html">Manage Constable</a></li>
+                <li><a href="view_fir.html">View FIR</a></li>
+                <li><a href="view_complaint.html">View Complaint</a></li>
+            </ul>
+        </nav>
+        <main>
+           
+
+            <!-- Form to add new inspector information -->
+            <form action="#" method="post">
+                <h2>Add New Inspector</h2>
+                <div class="form-group">
+                    <label for="inspector-id">Inspector ID</label>
+                    <input type="text" id="inspector-id" name="inspector-id" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inspector-name">Inspector Name</label>
+                    <input type="text" id="inspector-name" name="inspector-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="station-assigned">Station Assigned</label>
+                    <input type="text" id="station-assigned" name="station-assigned" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-number">Contact Number</label>
+                    <input type="tel" id="contact-number" name="contact-number" required>
+                </div>
+
+                <button type="submit" class="btn">Add Inspector</button>
+            </form>
+            <h2>Inspector List</h2>
+            <table cellspacing="2px">
+                <thead>
+                    <tr>
+                        <th>Inspector ID</th>
+                        <th>Inspector Name</th>
+                        <th>Station Assigned</th>
+                        <th>Contact Number</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>John Doe</td>
+                        <td>Central Police Station</td>
+                        <td>+1 555-123-4567</td>
+                        <td>
+                            <button class="btn">Edit</button>
+                            <button class="btn">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Jane Smith</td>
+                        <td>Downtown Police Station</td>
+                        <td>+1 555-987-6543</td>
+                        <td>
+                            <button class="btn">Edit</button>
+                            <button class="btn">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more inspectors as needed -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+</body>
+</html>

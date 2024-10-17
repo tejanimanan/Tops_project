@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Police Station - View Complaints</title>
+    <link rel="stylesheet" href="home_style.css">
+    <link rel="stylesheet" href="/allstyle.css">
+</head>
+<body>
+    <header>
+        <h1>View Complaints</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Manage_police_sta.html">Manage Information Of Police Station Area wise</a></li>
+                <li><a href="Manage_inspector.html">Manage Inspector</a></li>
+                <li><a href="Manage_constable.html">Manage Constable</a></li>
+                <li><a href="view_fir.html">View FIR</a></li>
+                <li><a href="view_complaint.html">View Complaint</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Complaint List</h2>
+            <table cellspacing="2px">
+                <thead>
+                    <tr>
+                        <th>Complaint ID</th>
+                        <th>Citizen Name</th>
+                        <th>Complaint Type</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>COM001</td>
+                        <td>Michael Brown</td>
+                        <td>Noise Disturbance</td>
+                        <td>2024-10-12</td>
+                        <td>Open</td>
+                        <td>
+                            <button class="btn">View</button>
+                            <button class="btn">Update</button>
+                            <button class="btn">Close</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>COM002</td>
+                        <td>Emily Davis</td>
+                        <td>Vandalism</td>
+                        <td>2024-10-14</td>
+                        <td>Under Investigation</td>
+                        <td>
+                            <button class="btn">View</button>
+                            <button class="btn">Update</button>
+                            <button class="btn">Close</button>
+                        </td>
+                    </tr>
+                    <!-- Add more complaints as needed -->
+                </tbody>
+            </table>
+
+            <!-- Form to Search Complaint -->
+            <form action="#" method="post">
+                <h2>Search Complaint</h2>
+                <div class="form-group">
+                    <label for="search-complaint-id">Complaint ID</label>
+                    <input type="text" id="search-complaint-id" name="search-complaint-id" placeholder="Enter Complaint ID to search" required>
+                </div>
+
+                <button type="submit" class="btn">Search Complaint</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

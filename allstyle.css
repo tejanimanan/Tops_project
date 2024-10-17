@@ -64,6 +64,7 @@ textarea {
     color: #fff;
 }
 nav {
+    width: 250px;
     flex: 1;
     background-color: #100404;
     padding: 20px;
@@ -89,3 +90,12 @@ nav ul li a {
 nav ul li a:hover {
     color: white;
 }
+
+table,tr,td,th{
+    border: 2px solid rgb(161, 149, 149);
+    padding: 3px 2px;
+}
+button{
+    margin-bottom: 5px;
+}
+
